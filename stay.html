@@ -8,7 +8,7 @@
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,7 +30,7 @@
   <div class="hero__scrim"></div>
   <div class="hero__content">
     <p class="eyebrow">Stay</p>
-    <h1 style="font-size:clamp(34px,5.6vw,64px); line-height:1.12;">A more personal<br>scale of luxury.</h1>
+    <h1 class="h-sub">A more personal<br>scale of luxury.</h1>
   </div>
   <div class="hero__scroll">Scroll</div>
 </header>
@@ -39,8 +39,8 @@
 <section class="intro reveal">
   <p class="eyebrow center">The Hotel</p>
   <h2>24, by design.</h2>
-  <p class="lede" style="font-family: var(--serif); font-style: italic; font-size: 19px; color: var(--cream);">Exceptional by nature. Limited by design.</p>
-  <p class="lede" style="margin: 24px auto 0;">Every suite is conceived as a private retreat rather than a conventional hotel room. From the quiet intimacy of the Deluxe Suites to the residential scale of the Penthouses, each category offers a different expression of space, privacy and personalisation.</p>
+  <p class="lede lede-emph">Exceptional by nature. Limited by design.</p>
+  <p class="lede">Every suite is conceived as a private retreat rather than a conventional hotel room. From the quiet intimacy of the Deluxe Suites to the residential scale of the Penthouses, each category offers a different expression of space, privacy and personalisation.</p>
 
   <div class="stats">
     <div class="stat"><span class="num">16</span><span class="label">Deluxe Suites</span></div>
@@ -56,9 +56,11 @@
 </section>
 
 <!-- SUITE CAROUSEL -->
-<section style="padding-top: clamp(70px,10vw,120px);">
-  <p class="eyebrow center" style="display:block; text-align:center;">Suite Typology</p>
-  <h2 class="center" style="font-size:clamp(28px,3.2vw,42px); padding: 0 var(--gutter) 50px; max-width: 760px; margin: 0 auto;">A different expression of space, for every guest.</h2>
+<section class="pt-md">
+  <div class="section-head reveal">
+    <p class="eyebrow center">Suite Typology</p>
+    <h2>A different expression of space, for every guest.</h2>
+  </div>
 
   <div class="carousel" data-carousel>
     <div class="carousel__index"><span class="now">01</span> / <span class="total"></span></div>
@@ -101,7 +103,7 @@
 <section class="quote reveal">
   <div class="quote__rule"></div>
   <p>Warm minimalism, natural stone, marble and crafted details create a timeless identity designed to remain relevant.</p>
-  <div style="margin-top: 40px;">
+  <div class="mt-lg">
     <a href="investment.html" class="btn">Explore the Investment Case</a>
   </div>
 </section>
