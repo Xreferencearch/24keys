@@ -13,8 +13,8 @@
   --gold-dim: rgba(201, 162, 75, 0.55);
   --line: rgba(244, 239, 230, 0.14);
 
-  --sans: "Darker Grotesque", Arial, Helvetica, sans-serif;
-  --display: "Fraunces", "Georgia", serif;
+  --sans: "Work Sans", Arial, Helvetica, sans-serif;
+  --display: "Work Sans", Arial, Helvetica, sans-serif;
 
   --container: 1440px;
   --gutter: clamp(24px, 6vw, 96px);
@@ -42,10 +42,9 @@ a { color: inherit; text-decoration: none; }
 
 h1, h2, h3, h4 {
   font-family: var(--display);
-  font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0;
-  letter-spacing: 0.005em;
+  letter-spacing: 0;
 }
 
 p { margin: 0; }
@@ -155,10 +154,9 @@ p { margin: 0; }
 
 .nav__mark {
   font-family: var(--display);
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-size: 20px;
-  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: 0.08em;
 }
 
 .nav__right {
@@ -265,9 +263,9 @@ p { margin: 0; }
 .hero__content .lede { margin-top: 22px; }
 .hero h1 {
   font-size: clamp(48px, 8vw, 104px);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1;
-  letter-spacing: -0.005em;
+  letter-spacing: -0.01em;
 }
 .hero h1 .accent-gold { color: var(--gold); }
 .hero h1 small {
@@ -325,9 +323,8 @@ p { margin: 0; }
 }
 .quote p {
   font-family: var(--display);
-  font-optical-sizing: auto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: clamp(21px, 3vw, 32px);
   letter-spacing: 0em;
   line-height: 1.45;
@@ -611,7 +608,7 @@ section { position: relative; }
   padding-bottom: 48px; border-bottom: 1px solid var(--line);
   margin-bottom: 28px;
 }
-.footer__mark { font-family: var(--display); font-optical-sizing: auto; font-weight: 600; font-size: 25px; letter-spacing: 0.05em; }
+.footer__mark { font-family: var(--display); font-weight: 500; font-size: 23px; letter-spacing: 0.08em; }
 .footer__mark span { display: block; font-family: var(--sans); font-weight: 500; font-size: 11px; letter-spacing: 0.14em; color: var(--cream-faint); margin-top: 10px; text-transform: uppercase; }
 .footer__cols { display: flex; gap: clamp(40px, 8vw, 100px); flex-wrap: wrap; }
 .footer__col h4 { font-weight: 400; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
