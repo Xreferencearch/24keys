@@ -15,6 +15,7 @@
 
   --sans: "Work Sans", Arial, Helvetica, sans-serif;
   --display: "Work Sans", Arial, Helvetica, sans-serif;
+  --logo-font: "Allura", cursive;
 
   --container: 1440px;
   --gutter: clamp(24px, 6vw, 96px);
@@ -153,10 +154,11 @@ p { margin: 0; }
 }
 
 .nav__mark {
-  font-family: var(--display);
-  font-weight: 500;
-  font-size: 19px;
-  letter-spacing: 0.08em;
+  font-family: var(--logo-font);
+  font-weight: 400;
+  font-size: 34px;
+  letter-spacing: 0.01em;
+  color: var(--cream);
 }
 
 .nav__right {
@@ -306,6 +308,15 @@ p { margin: 0; }
 @keyframes scrollLine { 0%,100% { opacity: .3 } 50% { opacity: 1 } }
 
 .hero--sub { height: 74vh; min-height: 460px; }
+
+.hero--cover .hero__rule {
+  position: absolute;
+  left: 50%; bottom: 25%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 56px; height: 1px;
+  background: var(--gold);
+}
 
 /* -------------------------------- QUOTE ---------------------------------- */
 
@@ -486,6 +497,13 @@ section { position: relative; }
 /* Uncropped variant — full room renders where nothing should be cut off */
 .carousel--fit .slide.panel .slide__photo { background: var(--near-black); }
 .carousel--fit .slide.panel .slide__photo img { object-fit: contain; }
+.carousel--fit .slide.full .slide__bg { background-size: contain; background-repeat: no-repeat; }
+
+.slide.full .slide__copy.copy--left {
+  left: var(--gutter); right: auto; bottom: 12%;
+  text-align: left; max-width: 460px; margin: 0;
+}
+.slide.full .slide__copy.copy--left p { margin: 0 auto 0 0; }
 
 @media (max-width: 900px) {
   .slide.panel { grid-template-columns: 1fr; }
@@ -608,7 +626,7 @@ section { position: relative; }
   padding-bottom: 48px; border-bottom: 1px solid var(--line);
   margin-bottom: 28px;
 }
-.footer__mark { font-family: var(--display); font-weight: 500; font-size: 23px; letter-spacing: 0.08em; }
+.footer__mark { font-family: var(--logo-font); font-weight: 400; font-size: 40px; letter-spacing: 0.01em; }
 .footer__mark span { display: block; font-family: var(--sans); font-weight: 500; font-size: 11px; letter-spacing: 0.14em; color: var(--cream-faint); margin-top: 10px; text-transform: uppercase; }
 .footer__cols { display: flex; gap: clamp(40px, 8vw, 100px); flex-wrap: wrap; }
 .footer__col h4 { font-weight: 400; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
