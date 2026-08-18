@@ -111,9 +111,22 @@ class Carousel {
     this.update();
   }
 
+  loadSlide(i) {
+    const n = this.slides.length;
+    if (!n) return;
+    const img = this.slides[(i + n) % n].querySelector("img[data-src]");
+    if (img) {
+      img.src = img.dataset.src;
+      img.removeAttribute("data-src");
+    }
+  }
+
   update() {
     this.slides.forEach((s, i) => s.classList.toggle("active", i === this.current));
     if (this.dots) this.dots.forEach((d, i) => d.classList.toggle("active", i === this.current));
     if (this.indexEl) this.indexEl.textContent = String(this.current + 1).padStart(2, "0");
+    this.loadSlide(this.current);
+    this.loadSlide(this.current + 1);
+    this.loadSlide(this.current - 1);
   }
 }
