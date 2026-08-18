@@ -504,9 +504,10 @@ section { position: relative; }
 
 @media (max-width: 900px) {
   .slide.panel { grid-template-columns: 1fr; }
-  .slide.panel .slide__photo { height: 44%; }
+  .slide.panel .slide__photo { height: 44vh; }
   .slide.panel .slide__info { padding: 32px var(--gutter); }
   .carousel { height: auto; min-height: 100vh; }
+  .carousel__track { min-height: 100vh; }
 }
 
 .carousel__nav {
